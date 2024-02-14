@@ -5,7 +5,8 @@ import Footer from "./Footer/Footer";
 
 import Home from "../pages/Home";
 import About from "../pages/About";
-import PageError from "../pages/PageError";
+import Accommodation from "../pages/Accommodation";
+//import PageError from "../pages/PageError";
 
 //import "./App.css";
 function App() {
@@ -15,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
-        <Route path="*" element={<PageError />} />
+        <Route path="/accommodation/:id" element={<Accommodation />} />
       </Routes>
       <Footer />
     </BrowserRouter>
