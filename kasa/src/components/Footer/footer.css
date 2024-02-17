@@ -8,6 +8,9 @@ footer{
     margin-top: 45px;
     background-color: black;
     color: white;
+
+
+
 }
 
 footer img{     
@@ -21,3 +24,16 @@ footer p {
     font-size: 24px;
 }
     
+@media (max-width: 767.98px) {
+    footer p {
+        top:66px;
+        width:120px;
+        font-size:12px;
+        text-align: center ;
+        line-height:18px;
+
+    }
+    footer {
+        margin: 0px;
+    }
+}

@@ -1,9 +1,10 @@
 .banner{
-    margin-left:50px;
-    margin-right: 50px;
+    margin-left:100px;
+    margin-right: 100px;
     position:relative;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     height:223px;
+    position:relative;
 }
 
 .banner img{
@@ -62,7 +63,8 @@ h1{
     
     }
     h1{
-        padding:15px 0 0 10px;
+        width: 236px;
+        padding:10px 0 0 10px;
         font-size: 24px;
     }
 }

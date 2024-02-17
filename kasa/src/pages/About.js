@@ -2,6 +2,7 @@ import Banner from "../components/Banner/Banner";
 import image from "../assets/ImageBannerAPropos.png";
 import Collapse from "../components/Collapse/Collapse";
 import "../styles/index.css";
+import "./about.css";
 
 const descritionAbout = [
   {
@@ -17,7 +18,7 @@ const descritionAbout = [
   {
     title: "Service",
     description:
-      "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraîneraune exclusion de notre plateforme.",
+      " Kasa offre une expérience exceptionnelle de location d'appartements, mettant à disposition une gamme diversifiée de logements soigneusement sélectionnés et garantissant un séjour confortable.",
   },
   {
     title: "Sécurité",
@@ -28,7 +29,7 @@ const descritionAbout = [
 
 export default function About() {
   return (
-    <div>
+    <div className="about-page">
       <Banner image={image} alt="photo montagnes et rivière " />
       <div className="about_div">
         {descritionAbout.map((data, index) => (

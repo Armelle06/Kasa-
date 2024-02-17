@@ -1,0 +1,23 @@
+/*.about-page{
+    height:535px;
+    
+}*/
+.about_div {
+    height:325px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+
+@media (max-width: 767.98px) {
+    .about-page{
+        height:444px;
+        
+    }
+    footer{
+        height:400px;
+    }
+    
+}

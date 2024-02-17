@@ -15,7 +15,6 @@ export default function Collapse({ title, content, isList }) {
   const collapseContentClass = `collapse_content ${
     isList ? "facilities" : ""
   } ${isOpen ? "open" : "close"}`;
-
   return (
     <div className="collapse">
       <div className="collapse_title">
@@ -28,10 +27,10 @@ export default function Collapse({ title, content, isList }) {
         </button>
       </div>
       <div className={collapseContentClass}>
-        {/* condition to display the list if necessary */}
+        /* class differente pour un effet de list */
         {isList ? (
           <ul>
-            {/* display the list elements fetched from the API properties */}
+            /* display the list elements fetched from the API properties */
             {content.map((item, index) => (
               <li key={index}>{item}</li>
             ))}

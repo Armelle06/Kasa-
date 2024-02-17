@@ -2,8 +2,6 @@
 
     margin:0 100px 0 100px;
     height:415px;
-
-
     position :relative;
     
 }
@@ -47,4 +45,25 @@
     font-weight: 600;
 
     
+}
+
+@media (max-width: 767.98px) {
+    .Slideshow{
+        margin: 0px 15px 0px 15px ;
+        height:255px;
+    }
+    .Slideshow img{
+        border-radius: 5px;;
+    }
+    .Slideshow .slide_number{
+        display:none;
+    }
+    .Slideshow .left_arrow{
+        width: 24px;
+        height:25px;
+    }
+    .Slideshow .right_arrow{
+        width:24px;
+        height:25px;
+    }
 }
