@@ -18,7 +18,7 @@ const descritionAbout = [
   {
     title: "Service",
     description:
-      " Kasa offre une expérience exceptionnelle de location d'appartements, mettant à disposition une gamme diversifiée de logements soigneusement sélectionnés et garantissant un séjour confortable.",
+      " Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.",
   },
   {
     title: "Sécurité",

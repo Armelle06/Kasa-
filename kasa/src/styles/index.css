@@ -1,13 +1,15 @@
 body  {
   margin: auto;
   max-width: 1440px;
+ 
+  
   font-family:"Montserrat", sans-serif;
   font-weight: 500; 
 }
 
-@media (max-width: 767.98px) {   
-  footer 
-       
-    
+@media (max-width: 767.98px)  {   
   
+
+       
 }
+  

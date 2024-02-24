@@ -1,33 +1,24 @@
 .tags-container {
-    
-    height:25px;
-    margin-top:20px  ;
-
+    margin-top: 20px;
 }
 
 .tags-container button {
-
-    width:150px;
-    height:25px;
-    border-radius: 20px;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
     background-color: rgba(255, 96, 96, 1);
-    border:none;
-    color:white;
-    margin-right: 10px;
+    border: none;
+    color: white;
+    margin: 10px;
+    font-size: 14px;
 }
+
 @media (max-width: 767.98px) {
-   
-    .tags-container button {
-        width:84px;
-        height:18px ;
-        font-size: 14px;
-        margin-top:0px;
+    .tags-container button {    
+        margin-top: 0px;      
     }  
+
     .tags-container {
-         margin-top:0px;
+         margin-top: 0px;
     }
-
-
-
-
 }

@@ -17,7 +17,7 @@ export default function CardGallery() {
     };
 
     fetchGalleryData();
-  }, []); // tableau depences vides= appelé qu'1 seule fois lors du premier rendu
+  }, []); // tableau depences vide = appelé qu'1 seule fois lors du premier rendu
 
   return (
     <div className="gallery-container">

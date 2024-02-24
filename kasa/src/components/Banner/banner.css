@@ -1,21 +1,20 @@
 .banner{
-    margin-left:100px;
+    margin-left: 100px;
     margin-right: 100px;
-    position:relative;
+    position: relative;
     margin-bottom: 35px;
-    height:223px;
-    position:relative;
+    height: 223px;
+    
 }
 
 .banner img{
-    width:100%;
-    height:223px;
+    width: 100%;
+    height: 223px;
     object-fit: cover;
-    border-radius:25px;
-    
+    border-radius: 25px;
 }
-div.text-over {
-  
+
+.text-over {
     width: 100%;
     height: 223px;
     position: absolute;
@@ -24,47 +23,36 @@ div.text-over {
     border-radius:25px;
     transform: translate(-50%, -50%);
     text-align: center;
-    
-
-    
-    color: white; /* Couleur du texte */
-    font-size: 24px; /* Taille de la police */
-    font-family: 'Montserrat', sans-serif; /* Police de caractères */
-    background: rgba(0, 0, 0, 0.5);/* Fond semi-transparent */
-     /* Espacement intérieur */
-    /*font-family: Montserrat;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 68px;
-    letter-spacing: 0em;
-    text-align: left;
-*/
+    color: white;
+    font-size: 24px; 
+    background: rgba(0, 0, 0, 0.25);/* Fond semi-transparent */
 }
+
 h1{
-   padding-top:55px;
+   padding-top: 55px;
    font-size: 48px;
-   
 }
 
 @media (max-width: 767.98px) {
     .banner{
-        margin-left:15px;
+        margin-left: 15px;
         margin-right: 15px;
-        margin-bottom: 0px;
-        height:110px;
+        margin-bottom: 10px;
+        height: 110px;
     }
 
     .banner img{
-        height:110px;
+        height: 110px;
     }
-    div.text-over { 
-        height:110px;
-        text-align:left;
-    
+
+    .text-over { 
+        height: 110px;
+        text-align: left;
     }
+
     h1{
         width: 236px;
-        padding:10px 0 0 10px;
+        padding: 10px 0 0 10px;
         font-size: 24px;
     }
 }

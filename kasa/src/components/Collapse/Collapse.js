@@ -6,7 +6,7 @@ export default function Collapse({ title, content, isList }) {
   const [isOpen, setIsOpen] = useState(false);
   const [iconRotation, setIconRotation] = useState("");
 
-  // handles both collapse and arrow states
+  // switchCollapse gere l'état du collapse et l'état de la fleche
   const switchCollapse = () => {
     setIsOpen(!isOpen);
     setIconRotation(isOpen ? "reverse" : "rotate");
@@ -27,10 +27,10 @@ export default function Collapse({ title, content, isList }) {
         </button>
       </div>
       <div className={collapseContentClass}>
-        /* class differente pour un effet de list */
+        {/* class differente pour un effet de list */}
         {isList ? (
           <ul>
-            /* display the list elements fetched from the API properties */
+            {/* display the list elements fetched from the API properties */}
             {content.map((item, index) => (
               <li key={index}>{item}</li>
             ))}

@@ -6,6 +6,7 @@ import "./slideshow.css";
 const SlideShow = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // % assure que l'index reste dans les limites du nombre//
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
@@ -16,10 +17,11 @@ const SlideShow = ({ images }) => {
     );
   };
 
+  //showArrowsAndNumber verifie si on a plus d'1 seule image .//
   const showArrowsAndNumber = images && images.length > 1;
 
   return (
-    <div /* className="slideshow_container"*/>
+    <div /* className="slideshow"*/>
       {images && images.length > 0 && (
         <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
       )}

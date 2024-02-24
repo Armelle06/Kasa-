@@ -28,7 +28,6 @@ export default function AccomodationContentBuilder() {
         } else {
           const data = await response.json();
           setCardData(data);
-          console.log(setCardData);
         }
       } catch (error) {
         console.error("Error fetching card data:", error);

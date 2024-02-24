@@ -6,14 +6,14 @@ import logo from "../../assets/kasa-header.png";
 const Header = () => {
   return (
     <header className="menu">
-      <NavLink className="logo" to="/" /*activeClassName="active"*/>
+      <NavLink className="logo" to="/">
         <img src={logo} alt="logo kasa" />
       </NavLink>
       <nav className="nav-ul">
-        <NavLink to="/" /*activeClassName="active" */ exact>
+        <NavLink to="/" exact>
           Accueil
         </NavLink>
-        <NavLink to="/about" /*activeClassName="active"*/>A Propos</NavLink>
+        <NavLink to="/about">A Propos</NavLink>
       </nav>
     </header>
   );
