@@ -17,7 +17,8 @@ const SlideShow = ({ images }) => {
     );
   };
 
-  //showArrowsAndNumber verifie si on a plus d'1 seule image .//
+  /*showArrowsAndNumber verifie si on a plus d'1 seule image, si true : arrow 
+  et slide_number sinon false : pas de arrow pas de slide_number*/
   const showArrowsAndNumber = images && images.length > 1;
 
   return (

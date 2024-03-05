@@ -8,34 +8,32 @@ import Collapse from "../Collapse/Collapse";
 import "./accommodation_content_builder.css";
 
 export default function AccomodationContentBuilder() {
-  const [cardData, setCardData] = useState(null);
-  const { id } = useParams();
-  const navigate = useNavigate();
-  console.log(cardData);
+  const [cardData, setCardData] = useState(null); // null car au depart aucune donné n'est disponible //
+  const { id } = useParams(); //récupére le paramètres de l'URL //
+  const navigate = useNavigate(); //redirection de manière impérative//
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        console.log("Fetching data...");
         const response = await fetch(
           `http://localhost:8080/api/properties/${id}`
         );
         console.log("Response status:", response.status);
 
         if (response.status === 404) {
-          console.log("Page not found. Redirecting to Page404");
+          console.log("Page non trouvée. Redirection vers Page404");
           navigate("../../pages/Page404");
         } else {
           const data = await response.json();
           setCardData(data);
         }
       } catch (error) {
-        console.error("Error fetching card data:", error);
+        console.error("Erreur lors de la recupération de card data:", error);
         navigate("../../pages/Page404");
       }
     };
     fetchData();
-  }, [id, navigate]);
+  }, [id, navigate]); // tableau de dependances sur id ,navigate//
   if (cardData === null) {
     return <p>Loading...</p>;
   }

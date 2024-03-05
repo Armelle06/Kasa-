@@ -43,11 +43,14 @@ h1{
 
     .banner img{
         height: 110px;
+        border-radius: 10px;
+
     }
 
     .text-over { 
         height: 110px;
         text-align: left;
+        border-radius: 10px;
     }
 
     h1{

@@ -15,7 +15,7 @@
     display: flex;
     position: relative;
     width: 28%;
-    height: 340px;
+    height: 270px;
     flex-direction: column;
     cursor: pointer;
 }
@@ -57,7 +57,7 @@
 }
 
 .gallery-item img {
-    height: 340px;
+    height: 270px;
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
@@ -71,6 +71,7 @@
     color: white;
     width: 55%;
     z-index: 1;
+    font-size: 16px;
 }
 
 @media (max-width:1024px) {
@@ -100,6 +101,6 @@
 
     .gallery-item p {
         width: 80%;
-        font-size: 16px;
+        font-size: 14px;
     }
 }

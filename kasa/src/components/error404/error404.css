@@ -14,16 +14,12 @@ margin: 100px 0 100px;
 
 .error-p{
     font-size: 50px;
-    margin: 0px;
 }
+
 .error_link {
-    height: 26px;
     font-size: 26px;
     margin: 0px;
     color:black;
-}
-.error_link p {
-    margin: 0px;
 }
 
 .flex-p{
@@ -48,13 +44,12 @@ margin: 100px 0 100px;
 
     .error-p{
         font-size: 18px;
-        padding:0px;
-        width:auto;
+        margin:0px 65px 0px;
     }
 
     .error_link  {
         font-size: 14px;
-        margin-bottom: 100px;;
+        margin:30px 0px 60px;
     }
 
     .flex-p{

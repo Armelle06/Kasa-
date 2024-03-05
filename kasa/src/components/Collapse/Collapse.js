@@ -6,7 +6,7 @@ export default function Collapse({ title, content, isList }) {
   const [isOpen, setIsOpen] = useState(false);
   const [iconRotation, setIconRotation] = useState("");
 
-  // switchCollapse gere l'état du collapse et l'état de la fleche
+  // switchCollapse est appelé onClick = gere l'état du collapse et l'état de la fleche
   const switchCollapse = () => {
     setIsOpen(!isOpen);
     setIconRotation(isOpen ? "reverse" : "rotate");
@@ -30,7 +30,7 @@ export default function Collapse({ title, content, isList }) {
         {/* class differente pour un effet de list */}
         {isList ? (
           <ul>
-            {/* display the list elements fetched from the API properties */}
+            {/* Afficher les éléments de la liste récupérés à partir des propriétés de l'API*/}
             {content.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
@@ -38,7 +38,7 @@ export default function Collapse({ title, content, isList }) {
         ) : (
           <p>{content}</p>
         )}{" "}
-        {/* If content is not a list, display changes accordingly */}
+        {/* "Si le contenu n'est pas une liste, les changements d'affichage sont effectués en conséquence*/}
       </div>
     </div>
   );
